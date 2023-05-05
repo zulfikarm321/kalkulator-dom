@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kalkulator sederhana</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex_container">
+      <div class="flex_row">
+        <input type="number" id="angkaPertama" placeholder="Angka pertama" />
+        <input type="number" id="angkaKedua" placeholder="Angka kedua" />
+      </div>
+      <div class="flex_row">
+        <button class="operator" id="tambah">+</button>
+        <button class="operator" id="kurang">-</button>
+        <button class="operator" id="kali">x</button>
+        <button class="operator" id="bagi">/</button>
+      </div>
+      <div class="flex_row">
+        <div id="result">0</div>
+      </div>
+      <div class="flex_row">
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
