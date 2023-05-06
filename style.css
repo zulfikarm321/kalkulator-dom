@@ -50,11 +50,14 @@ button:active {
 }
 
 .operator {
-  /* width: 50px;
-        height: 50px; */
   flex: 1;
-  background-color: #98d8aa;
+  background-color: #ff6969;
   border: 2px solid black;
+}
+
+.operator.active {
+  background-color: #98d8aa;
+  border: 2px solid white;
 }
 
 #result {
@@ -72,6 +75,7 @@ button:active {
 
 @media (max-width: 768px) {
   .flex_row {
+    width: 100%;
     flex-direction: column;
   }
 }

@@ -6,7 +6,13 @@ buttons.forEach((button) => {
     let angkaKedua = document.getElementById('angkaKedua');
     let resultElement = document.getElementById('result');
     targetId = e.target.id;
-    let result = 0;
+
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove('active');
+    }
+    if (button.classList.contains('operator')) {
+      button.classList.add('active');
+    }
 
     if (targetId == 'reset') {
       angkaPertama.value = '';
@@ -21,6 +27,7 @@ buttons.forEach((button) => {
       return;
     }
 
+    let result = 0;
     switch (targetId) {
       case 'tambah':
         result = Number(angkaPertama.value) + Number(angkaKedua.value);
