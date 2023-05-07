@@ -36,6 +36,11 @@ buttons.forEach((button) => {
         result = Number(angkaPertama.value) - Number(angkaKedua.value);
         break;
       case 'bagi':
+        if (Number(angkaKedua.value) === 0) {
+          resultElement.innerHTML =
+            '<span style="color: red;">tidak bisa dibagi dengan 0<span>';
+          return;
+        }
         result = Number(angkaPertama.value) / Number(angkaKedua.value);
         break;
       case 'kali':
